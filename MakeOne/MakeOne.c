@@ -21,7 +21,7 @@ void make_one(int i, int current)
 		if (current < min) min = current;
 		return;
 	}
-	if (i % 3 == 0) make_one(i / 3, current++);
-	if (i % 2 == 0) make_one(i / 2, current++);
-	make_one(i - 1, current++);
+	if (i % 3 == 0) make_one(i / 3, ++current);
+	if (i % 2 == 0) make_one(i / 2, ++current);
+	make_one(i - 1, ++current);
 }
